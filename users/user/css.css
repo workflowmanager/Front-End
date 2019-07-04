@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1,label,input,tr,td,thead,tbody{
+	 font-family: vazir;
+}
+
+.table{
+  background-color: #fff;
+  direction: rtl;
+}
+input{
+  direction: rtl;
+} 
+.update-form{
+  display: none;
+}
+
+select{
+  direction: rtl;
+}
+.form-check-label{
+  position: relative;
+  margin-right: 2em;
+  }
+  .form-check-input{
+    position: relative;
+   margin-right: -8em;
+  }
+  .form-check-input1{
+    position: relative;
+   margin-right: -3em;
+  }
+
+@media (min-width:50em){
+
+input{
+  direction: rtl;
+} 
+.update-form{
+  display: none;
+}
+.form-box{
+  width: 50%;
+  float: right;
+}
+}
