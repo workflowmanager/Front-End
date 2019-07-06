@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>لیست کاربران</title>
+    <link 
+  rel="stylesheet"
+  href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+  integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+</head>
+<body>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="active">پنل ادمین</a>
+        
+        <div class="sidebar">
+          	<a href="../index.html">صفحه اصلی </a>
+            <button class="dropdown-btn">مدیریت کاربر 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                  <a  href="Create.html">اضافه کردن کاربر</a>
+                  <a class="active" href="All.html">کاربران</a>
+                  <a href="Get.html">اطلاعات کاربر</a>
+              </div>
+      
+        </div>
+      </div>
+ 
+  <div class="content">
+      <div class="table-responsive-sm">
+          <table id="table" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">نام و نام خانوادگی</th>
+                  <th scope="col">شماره دانشجویی</th>
+                  <th scope="col">ورودی</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>شیما مینایی</td>
+                  <td>921041038</td>
+                  <td>92</td>
+                  <td><button type="button" onclick="update()" class="btn btn-primary btn-sm"> ویرایش اطلاعات</button>
+                  <button type="button" onclick="deleteuser()" class="btn btn-primary btn-sm btn-newcolor"> حذف کاربر</button>
+                  <button type="button" onclick="more_data_user()" class="btn btn-primary btn-sm btn-newcolor"> اطلاعات کاربر</button></td>
+                </tr> 
+                <tr>
+                  <th scope="row">2</th>
+                  <td>سارا احمدی</td>
+                  <td>932015423</td>
+                  <td>93</td>
+                  <td><button type="button" onclick="update()" class="btn btn-primary btn-sm"> ویرایش اطلاعات</button>
+                    <button type="button" onclick="deleteuser()" class="btn btn-primary btn-sm btn-newcolor"> حذف کاربر</button>
+                    <button type="button" onclick="more_data_user()" class="btn btn-primary btn-sm btn-newcolor"> اطلاعات کاربر</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>شیوا ساری</td>
+                  <td>945688742</td>
+                  <td>94</td>
+                  <td><button type="button" onclick="update()" class="btn btn-primary btn-sm"> ویرایش اطلاعات</button>
+                    <button type="button" onclick="deleteuser()" class="btn btn-primary btn-sm btn-newcolor"> حذف کاربر</button>
+                    <button type="button" onclick="more_data_user()" class="btn btn-primary btn-sm btn-newcolor"> اطلاعات کاربر</button></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+  
+
+
+  </div>
+  
+  <script>
+   
+  function update(){
+    window.location.href = "Update.html";
+  }
+ 
+  function deleteuser(){
+    confirm("آیا از حذف کاربر اطمینان دارید؟");
+  }
+  function more_data_user(){
+window.location.href="Get.html";
+  }
+  </script>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script> 
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+  integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+  crossorigin="anonymous"></script>
+</body>
+</html>
