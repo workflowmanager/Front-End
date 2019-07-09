@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-				
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
 </head>
 <body>
     
@@ -24,17 +24,21 @@
         <a href="#home" class="active">پنل مدیریت</a>
         
         <div class="sidebar">
-				<a href="../index.html">صفحه اصلی </a>
-        <button class="dropdown-btn">مدیریت کاربر 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-container">
-              <a class="active" href="Create.html">اضافه کردن کاربر</a>
-              <a href="All.html">کاربران</a>
-              <a href="Get.html">اطلاعات کاربر</a>
+            <ul class="nav-menu">
+                <li><a style="color:white;" href="../index.html">
+                  <div style="display: flex; float: right;"">
+                   <span >صفحه اصلی</span>
+                      <i class="material-icons">home</i>
+                  </div>
+                  </a></li>
+              <li><a  style="color:white;" href="All.html" >
+                <div style="display: flex; float: right;">
+                مدیریت کاربران
+                <i class="material-icons">account_box</i>
+              </div>
+              </a></li>
+            </ul>
           </div>
-        
-        </div>
       </div>
  
   <div class="content">
@@ -96,6 +100,7 @@
               </label>
             </div>
           </div>
+          <a href="All.html" style="color: black; margin-right:1em;">انصراف</a>
           <button type="submit" onclick="signin()" class="btn btn-primary">ثبت دانشجو</button>
         </form>
 	</div>

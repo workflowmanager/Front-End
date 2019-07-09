@@ -15,11 +15,9 @@ box-sizing: inherit;
 }
 body {
 margin: 0;
-font-family: Helvetica, Arial, sans-serif;
+font-family: vazir;
 }
-button,h2{
-    font-family: vazir;
-}
+
 a:link {
 font-family: vazir;
 color: white;
@@ -40,7 +38,7 @@ text-decoration: underline;
 }
 .topnav {
     overflow: hidden;
-    background-color: #0066cc;
+    background-color: #283593;
     position: fixed;
     width: 100%;
     top: 0;
@@ -57,14 +55,14 @@ text-decoration: underline;
   }
 
   .topnav a.active {
-    background-color: #0066cc;
+    background-color: #283593;
     color: white;
   }
   
   .topnav .icon {
     display: none;
   }
-  
+ 
   @media screen and (max-width: 50em) {
     
     .topnav a.icon {
@@ -88,56 +86,68 @@ text-decoration: underline;
       display: block;
       text-align: left;
     }*/
+ 
   }
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 11.11em;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    right: 0;
-    top: 3em;
-    padding-top: 0.6em;
-  }
-  
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 1em;
-    text-decoration: none;
-    
-      width: 100%;
-      text-align: right;
-    
-  }
-   
-  .sidebar a.active {
-    background-color: #0066cc;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #d9d9d9;
-   
-  }
-  
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 11.11em;
+  background-color: #283593;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  right: 0;
+  top: 3em;
+  padding-top: 0.6em;
+}
+
+/**/
+.nav-menu {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 0.8em 1em;
+  color: black;
+  font-weight: normal;
+ width: 100%;
+ 
+}
+.nav-menu > li > a:hover {
+ background-color:#5f6cd3;
+}
+.nav-menu a.active {
+  background-color:#5f6cd3;
+ }
+/**/
+.sidebar .nav-menu div{
+  float: right !important;
+}
   div.content {
     margin-right: 11.11em;
     padding: 1em;
-    height: 55.55em;
+    height: 60em;
     margin-top: 2.9em;
     background-color: #f1f1f1;
    
   }
-  
+
+  .dropdown-container {
+    display: none;
+  }
+  .dropdown-container.activate{
+    display: block;
+  }
   @media screen and (max-width: 50em) {
     .sidebar{
         display: none;
     }
     .topnav.responsive .sidebar {
-        display: block;
+      display: block;
       width: 100%;
       height: auto;
       position: relative;
@@ -152,20 +162,69 @@ text-decoration: underline;
         background-color: #f1f1f1;
         margin-top: 3em;
     }
-    .sidebar a{
+    .sidebar a {
       width: auto;
-      text-align: right;
+      
+    }
+    .sidebar .nav-menu li div{
+      align-items: center;
+      justify-content: center;
+    }
+    .sidebar .nav-menu div{
+      float: none !important;
     }
   }
   
   @media screen and (max-width: 35em) {
-    .topnav.responsive .sidebar a {
+    .topnav.responsive .sidebar a ,.dropdown-btn{
       text-align: center;
       float: none;
+      font-size: initial;
     }
     div.content {
       margin-right: 0;
       background-color: #f1f1f1;
       margin-top: 3.6em;
   }
+ 
+  .sidebar .nav-menu li div{
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar .nav-menu div{
+    float: none !important;
+  }
+  .user-list
+  {
+    border-radius: 0.5em;
+  }
+
+  .float-add {
+    position:fixed; 
+    border-radius:2.5em; 
+    width:2.5em; 
+    height:2.5em; 
+    top:35em;
+    left:2em;
+    background-color: green;
+    color:white;
+    border: none;
+    text-decoration: none;
+
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .float-add:hover{
+    text-decoration: none;
+  }
+
+  .float-add:visited{
+    text-decoration: none;
+  }
+
+  .float-add:active{
+    text-decoration: none;
   }

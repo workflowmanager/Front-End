@@ -19,9 +19,14 @@
     <a href="#home" class="active">پنل ادمین</a> 
     <div class="sidebar">
       <ul class="nav-menu">
-        <li><a style="color:white;" href="/about.html">صفحه اصلی</a></li>
-        <li><a style="color:white;" href="/shop.html">
-          <div style="display:flex;">
+          <li><a style="color:white;" href="../index.html">
+            <div style="display: flex;"">
+             <span >صفحه اصلی</span>
+                <i class="material-icons">home</i>
+            </div>
+            </a></li>
+        <li><a class="active" style="color:white;" href="All.html" >
+          <div style="display: flex;">
           مدیریت کاربران
           <i class="material-icons">account_box</i>
         </div>
@@ -30,9 +35,10 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content" style="height: auto;">
 
-    <a href="Create.html" class="float-add">
+    <a style="color:black;"href="Create.html" class="float-add">
+   
         <i class="material-icons">add</i>
     </a>
 
@@ -56,12 +62,17 @@
             <td>92</td>
             <td>مهندسی کامپیوتر</td>
             <td>
-              <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
+                <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                    <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                  </a>
+           
+              <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
                 <i style="margin:0; padding: 0;" class="material-icons">edit</i>
               </a>
-              <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+              <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
                 <i style="margin:0; padding: 0;" class="material-icons">delete</i>
               </a>
+           
             </td>
           </tr> 
           <tr>
@@ -71,12 +82,15 @@
             <td>93</td>
             <td>مهندسی برق</td>
             <td>
-                <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                    <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                    <i style="margin:0; padding: 0;" class="material-icons">more</i>
                   </a>
-                <a style="color:  #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                  <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                </a>
+              <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+              </a>
+              <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+              </a>
               </td>
           </tr>
           <tr>
@@ -86,10 +100,13 @@
             <td>94</td>
             <td>مهندسی نفت</td>
             <td>
-              <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
+                <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                    <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                  </a>
+              <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
                 <i style="margin:0; padding: 0;" class="material-icons">edit</i>
               </a>
-              <a style="color:  #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+              <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
                 <i style="margin:0; padding: 0;" class="material-icons">delete</i>
               </a>
             </td>
@@ -101,10 +118,13 @@
             <td>92</td>
             <td>فیزیک اتمی</td>
             <td>
-              <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
+                <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                    <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                  </a>
+              <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
                 <i style="margin:0; padding: 0;" class="material-icons">edit</i>
               </a>
-              <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+              <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
                 <i style="margin:0; padding: 0;" class="material-icons">delete</i>
               </a>
             </td>
@@ -116,12 +136,15 @@
               <td>93</td>
               <td>کشاورزی</td>
               <td >
-                  <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                      <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                  <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                      <i style="margin:0; padding: 0;" class="material-icons">more</i>
                     </a>
-                  <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                    <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                  </a>
+                <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                  <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                </a>
+                <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                  <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                </a>
                 </td>
           </tr>
           <tr>
@@ -131,12 +154,15 @@
               <td>94</td>
               <td>مهندسی عمران</td>
               <td >
-                  <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                      <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                  <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                      <i style="margin:0; padding: 0;" class="material-icons">more</i>
                     </a>
-                  <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                    <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                  </a>
+                <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                  <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                </a>
+                <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                  <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                </a>
               </td>
           </tr>
           <tr>
@@ -146,10 +172,13 @@
                 <td>94</td>
                 <td>مهندسی عمران</td>
                 <td>
-                    <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                      <i style="margin:0; padding: 0;" class="material-icons">edit</i>
-                    </a>
-                  <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                    <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                        <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                      </a>
+                  <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                    <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                  </a>
+                  <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
                     <i style="margin:0; padding: 0;" class="material-icons">delete</i>
                   </a>
                 </td>
@@ -161,12 +190,15 @@
                   <td>92</td>
                   <td>مهندسی کامپیوتر</td>
                   <td>
-                      <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                        <i style="margin:0; padding: 0;" class="material-icons">edit</i>
-                      </a>
-                      <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                        <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                      </a>
+                      <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                          <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                        </a>
+                    <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                      <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                    </a>
+                    <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                      <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                    </a>
                     </td>
           </tr> 
           <tr>
@@ -176,12 +208,15 @@
                   <td>93</td>
                   <td>مهندسی برق</td>
                   <td>
-                      <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                        <i style="margin:0; padding: 0;" class="material-icons">edit</i>
-                      </a>
-                      <a style="color:  #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                        <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                      </a>
+                      <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                          <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                        </a>
+                    <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                      <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                    </a>
+                    <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                      <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                    </a>
                     </td>
           </tr>
           <tr>
@@ -191,12 +226,15 @@
                   <td>94</td>
                   <td>مهندسی نفت</td>
                   <td>
-                      <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                        <i style="margin:0; padding: 0;" class="material-icons">edit</i>
-                      </a>
-                      <a style="color:  #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                        <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                      </a>
+                      <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                          <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                        </a>
+                    <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                      <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                    </a>
+                    <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                      <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                    </a>
                     </td>
           </tr>
           <tr>
@@ -206,12 +244,15 @@
                     <td>92</td>
                     <td>فیزیک اتمی</td>
                     <td >
-                        <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                          <i style="margin:0; padding: 0;" class="material-icons">edit</i>
-                        </a>
-                        <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                          <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                        </a>
+                        <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                            <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                          </a>
+                      <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                        <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                      </a>
+                      <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                        <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                      </a>
                       </td>
           </tr> 
           <tr>
@@ -221,12 +262,15 @@
                     <td>93</td>
                     <td>کشاورزی</td>
                     <td >
-                        <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                          <i style="margin:0; padding: 0;" class="material-icons">edit</i>
-                        </a>
-                        <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                          <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                        </a>
+                        <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                            <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                          </a>
+                      <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                        <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                      </a>
+                      <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                        <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                      </a>
                       </td>
           </tr>
           <tr>
@@ -236,12 +280,15 @@
                     <td>94</td>
                     <td>مهندسی عمران</td>
                     <td >
-                        <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                          <i style="margin:0; padding: 0;" class="material-icons">edit</i>
-                        </a>
-                        <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
-                          <i style="margin:0; padding: 0;" class="material-icons">delete</i>
-                        </a>
+                        <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                            <i style="margin:0; padding: 0;" class="material-icons">more</i>
+                          </a>
+                      <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                        <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                      </a>
+                      <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                        <i style="margin:0; padding: 0;" class="material-icons">delete</i>
+                      </a>
                     </td>
           </tr>
           <tr>
@@ -251,10 +298,13 @@
                       <td>94</td>
                       <td>مهندسی عمران</td>
                       <td>   
-                          <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="#">
-                              <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                          <a style="color: #283593; margin:0; padding: 0; text-decoration: none;" href="Get.html">
+                              <i style="margin:0; padding: 0;" class="material-icons">more</i>
                             </a>
-                        <a style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
+                        <a style="color: black; margin:0; padding: 0; text-decoration: none;" href="Update.html">
+                          <i style="margin:0; padding: 0;" class="material-icons">edit</i>
+                        </a>
+                        <a onclick="delete_user()" style="color: #e74c3c; margin:0; padding: 0; text-decoration: none;" href="#">
                           <i style="margin:0; padding: 0;" class="material-icons">delete</i>
                         </a>
                       </td>
@@ -265,16 +315,8 @@
   </div>
   
   <script>
-   
-  function update(){
-    window.location.href = "Update.html";
-  }
- 
-  function deleteuser(){
+  function delete_user(){
     confirm("آیا از حذف کاربر اطمینان دارید؟");
-  }
-  function more_data_user(){
-window.location.href="Get.html";
   }
   </script>
   <script>

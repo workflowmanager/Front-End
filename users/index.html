@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>پنل مدیریت</title>
     <link 
   rel="stylesheet"
   href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
   crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-				
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
 </head>
 <body>
     
@@ -20,24 +20,53 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="active">پنل ادمین</a>
+    <a href="#home" class="active">پنل  مدیریت</a>
     
     <div class="sidebar">
-      	<a href="index.html">صفحه اصلی </a>
-        <a  href="user/adduser.html">اضافه کردن کاربر</a>
-    <a href="user/showuser.html">کاربران</a>
-   
-    </div>
+        <ul class="nav-menu">
+            <li><a  class="active" style="color:white;" href="index.html">
+              <div style="display: flex;"">
+               <span >صفحه اصلی</span>
+                  <i class="material-icons">home</i>
+              </div>
+              </a></li>
+          <li><a  style="color:white;" href="user/All.html" >
+            <div style="display: flex;">
+            مدیریت کاربران
+            <i class="material-icons">account_box</i>
+          </div>
+          </a></li>
+        </ul>
+      </div>
   </div>
     
       
   <div class="content">
-    <h2>Responsive Topnav Example</h2>
-    <p>Resize the browser window to see how it works.</p>
+    <h2>!سلام</h2>
+    <p>به پنل مدیریت خوش آمدید</p>
   </div>
   
-
   <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+      }
+      
+      </script>
+      
+  <script>
+    
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-				
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
 </head>
 <body>
     
@@ -24,17 +24,21 @@
         <a href="#home" class="active">پنل مدیریت</a>
         
         <div class="sidebar">
-				<a href="../index.html">صفحه اصلی </a>
-                <button class="dropdown-btn">مدیریت کاربر 
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown-container" id="active">
-                          <a class="" href="Create.html" >اضافه کردن کاربر</a>
-                          <a class="" href="All.html">کاربران</a>
-                          <a class="sub-menu" class="active" href="Get.html" onclick="n()">اطلاعات کاربر</a>
-                    </div>
-        
-        </div>
+            <ul class="nav-menu">
+                <li><a style="color:white;" href="../index.html">
+                  <div style="display: flex;"">
+                   <span >صفحه اصلی</span>
+                      <i class="material-icons">home</i>
+                  </div>
+                  </a></li>
+              <li><a  style="color:white;" href="All.html" >
+                <div style="display: flex;">
+                مدیریت کاربران
+                <i class="material-icons">account_box</i>
+              </div>
+              </a></li>
+            </ul>
+          </div>
       </div>
  
   <div class="content">
@@ -114,7 +118,7 @@
                         </div>
                   </div>
                   <div class="row edit-button">
-                    <a  href="">ویرایش</a>
+                    <a  href="Update.html">ویرایش</a>
                   </div>
               </div>
   </div>
