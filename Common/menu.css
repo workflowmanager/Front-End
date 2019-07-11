@@ -1,0 +1,116 @@
+.topnav {
+    overflow: hidden;
+    background-color: #283593;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a.active {
+    background-color: #283593;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 11.11em;
+    background-color: #283593;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    right: 0;
+    top: 3em;
+    padding-top: 0.6em;
+  }
+  
+  /**/
+  .nav-menu {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .nav-menu > li > a {
+    display: block;
+    padding: 0.8em 1em;
+    color: white;
+    font-weight: normal;
+   width: 100%;
+   
+  }
+  .nav-menu > li > a:hover {
+   background-color:#5f6cd3;
+  }
+  .nav-menu a.active {
+    background-color:#5f6cd3;
+   }
+   
+.sidebar .nav-menu div{
+    display: flex;
+    float: right !important;
+  }
+  @media screen and (max-width: 50em) {
+    
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+    }
+    .sidebar{
+        display: none;
+    }
+    .topnav.responsive .sidebar {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+    }
+    .topnav.responsive .sidebar a {
+        float: right;
+    }
+    .sidebar a {
+        width: auto;
+        
+      }
+      .sidebar .nav-menu li div{
+        align-items: center;
+        justify-content: center;
+      }
+      .sidebar .nav-menu div{
+        float: none !important;
+      }
+  }
+  @media screen and (max-width: 35em) {
+    .topnav.responsive .sidebar a ,.dropdown-btn{
+        text-align: center;
+        float: none;
+        font-size: initial;
+      }
+      
+  .sidebar .nav-menu li div{
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar .nav-menu div{
+    float: none !important;
+  }
+
+  }
