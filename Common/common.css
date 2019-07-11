@@ -1,0 +1,111 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+}
+
+    *,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+@font-face {
+    font-family: vazir;
+    src: url(Font/vazir-font-v20.1.0/vazir.woff);
+}
+body {
+margin: 0;
+font-family: vazir;
+background-color: #f1f1f1;
+}
+@media (min-width: 50em) {
+    :root {
+    font-size: 1.125em;
+    }
+  
+}
+a:link {
+font-family: vazir;
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+a:visited {
+color: white;
+}
+a:hover {
+text-decoration: underline;
+
+}
+  div.content {
+    margin-right: 11.11em;
+    padding: 1em;
+    height: auto;
+    margin-top: 2.9em;
+    background-color: #f1f1f1;
+  }
+
+  .dropdown-container {
+    display: none;
+  }
+  .dropdown-container.activate{
+    display: block;
+  }
+  form{
+    margin-bottom: 1em;
+  }
+  .material-icons{
+    margin:0 !important; 
+    padding: 0 !important;
+  }
+  @media screen and (max-width: 50em) {
+
+    div.content {
+        margin-right: 0;
+        background-color: #f1f1f1;
+        margin-top: 3em;
+    }
+  }
+  
+  @media screen and (max-width: 35em) {
+ 
+    div.content {
+      margin-right: 0;
+      background-color: #f1f1f1;
+      margin-top: 3.6em;
+  }
+ 
+  .user-list
+  {
+    border-radius: 0.5em;
+  }
+
+  .float-add {
+    position:fixed; 
+    border-radius:2.5em; 
+    width:2.5em; 
+    height:2.5em; 
+    top:35em;
+    left:2em;
+    background-color: green;
+    color:black;
+    border: none;
+    text-decoration: none;
+
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .float-add:hover{
+    text-decoration: none;
+  }
+
+  .float-add:visited{
+    text-decoration: none;
+  }
+
+  .float-add:active{
+    text-decoration: none;
+  }
+}
