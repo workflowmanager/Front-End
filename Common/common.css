@@ -10,12 +10,12 @@ box-sizing: inherit;
 }
 @font-face {
     font-family: vazir;
-    src: url(Font/vazir-font-v20.1.0/vazir.woff);
+    src: url(Font/vazir-font-v20.1.0/Vazir.woff);
 }
 body {
 margin: 0;
 font-family: vazir;
-background-color: #f1f1f1;
+background-color: #ecf0f5;
 }
 @media (min-width: 50em) {
     :root {
@@ -31,11 +31,17 @@ text-decoration: none;
 }
 a:visited {
 color: white;
+text-decoration: none;
 }
 a:hover {
 text-decoration: underline;
 
 }
+
+a:active {
+  text-decoration: underline;
+}
+
   div.content {
     margin-right: 11.11em;
     padding: 1em;
@@ -43,19 +49,144 @@ text-decoration: underline;
     margin-top: 2.9em;
     background-color: #f1f1f1;
   }
-
+ .addressbar{
+   font-size: 0.7em;
+ }
   .dropdown-container {
     display: none;
   }
   .dropdown-container.activate{
     display: block;
   }
-  form{
-    margin-bottom: 1em;
+ 
+  
+  .form-box{
+    border-top: 0.3em solid #3c8dbc;
+    background-color: white;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    width: 50%;
+    float: right;
+      margin-bottom: 2em;
   }
-  .material-icons{
-    margin:0 !important; 
-    padding: 0 !important;
+  .table{
+    background-color: #fff;
+    direction: rtl;
+  }
+  tr:hover{
+    background-color: #f1f1f1;
+  }
+  tr:active{
+    background-color: #f1f1f1;
+  }
+  input{
+    direction: rtl;
+  } 
+  
+  select{
+    direction: rtl;
+  }
+  .form-check-label{
+    position: relative;
+    margin-right: 2em;
+    }
+    .form-check-input{
+      position: relative;
+     margin-right: -8em;
+    }
+    .form-check-input1{
+      position: relative;
+     margin-right: -3em;
+    }
+  .btn{
+    margin-top: 1em;
+  }
+  .btn-newcolor{
+    background-color:  #0056b3;
+  }
+  .col-50>label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  .edit-button>a {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1em;
+  }
+  
+  .edit-button>a:hover {
+    background-color: #0066cc;
+  }
+  .col-50{
+    width: 45%;
+    float: right;
+    
+  }
+  /* Clear floats after the columns */
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  .row{
+    direction: rtl;
+  }
+  .title-of-data{
+    color: #656565;
+  }
+  .more-icon{
+    color: #283593 !important;
+     margin:0 !important; 
+     padding: 0 !important;
+     text-decoration: none !important;
+  }
+  .edit-icon{
+    color: black !important;
+     margin:0 !important; 
+     padding: 0 !important;
+     text-decoration: none !important;
+  }
+  .delete-icon{
+    color: #e74c3c !important;
+     margin:0 !important; 
+     padding: 0 !important;
+     text-decoration: none !important;
+  }
+  .refuse{
+         color: black !important;
+     margin-right:1em; 
+  }
+  
+  .add-box{
+    width: 12%;
+    float: right;
+    margin-bottom: 0.2em;
+    border: 0.03em solid #e6e6e6;
+    background-color: white;
+    font-size: 1em;
+    border-radius: 0.5em 0.5em 0em 0em;;
+    padding: 0.4em 0.8em 0.4em 0.4em;
+    text-decoration: none;
+    
+  }
+  .add-box:hover{
+    background-color: #f1f1f1;
+    text-decoration: none;
+  }
+  .add-box i{
+    margin-left: 0.5em;
+  }
+
+  .add-xl{
+    color: black !important;
+  }
+  .add-sm{
+    display: none;
   }
   @media screen and (max-width: 50em) {
 
@@ -64,6 +195,14 @@ text-decoration: underline;
         background-color: #f1f1f1;
         margin-top: 3em;
     }
+    .add-box{
+     font-size: 0.8em;
+    }
+     .form-box{
+    width: 100%;
+
+  }
+
   }
   
   @media screen and (max-width: 35em) {
@@ -73,39 +212,52 @@ text-decoration: underline;
       background-color: #f1f1f1;
       margin-top: 3.6em;
   }
- 
+ .table-responsive-sm{
+  border-radius: 1em;
+ }
   .user-list
   {
     border-radius: 0.5em;
   }
+       .form-box{
+    width: 100%;
 
-  .float-add {
+  }
+  .add-box{
+    background-color: #f1f1f1;
+  }
+  .add-sm {
     position:fixed; 
     border-radius:2.5em; 
     width:2.5em; 
     height:2.5em; 
-    top:35em;
-    left:2em;
-    background-color: green;
-    color:black;
+    bottom:2em;
+    background-color: rgb(173, 236, 173);
+    color:black !important;
     border: none;
     text-decoration: none;
-
+    font-size: 1.2em;
     vertical-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .float-add:hover{
+  .add-sm i{
+    margin-right: 0.5em;
+  }
+  .add-sm:hover{
     text-decoration: none;
   }
 
-  .float-add:visited{
+  .add-sm:visited{
     text-decoration: none;
   }
 
-  .float-add:active{
+  .add-sm:active{
     text-decoration: none;
   }
+  .add-xl{
+    display: none;
+  }
+  
 }

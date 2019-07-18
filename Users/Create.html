@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>اضافه کردن کاربر</title>
+ <title>افزودن کاربر</title>
     <link 
   rel="stylesheet"
   href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
   integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
   crossorigin="anonymous">
-  <link rel="stylesheet" href="../common/menu.css" />
-  <link rel="stylesheet" href="../common/common.css" />
+  <link rel="stylesheet" href="../Common/menu.css" />
+  <link rel="stylesheet" href="../Common/common.css" />
   <link rel="stylesheet" href="Users.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
+    	
 </head>
 <body>
     
@@ -25,24 +25,36 @@
         <a href="#home" class="active">پنل مدیریت</a>
         
         <div class="sidebar">
-          <ul class="nav-menu">
-              <li><a  href="../index.html">
+            <ul class="nav-menu">
+                <li><a  href="../index.html">
+                  <div>
+                   <span >صفحه اصلی</span>
+                   <i class="fa fa-home"></i>
+                  </div>
+                  </a></li>
+              <li><a href="All.html" >
                 <div>
-                 <span >صفحه اصلی</span>
-                    <i class="material-icons">home</i>
+                کاربران
+                <i class="fa fa-users"></i>
+              </div>
+              </a></li>
+              <li><a  href="../Workflows/All.html" >
+                <div>
+                    چرخه های کاری
+                    <i class="fa fa-retweet"></i>
                 </div>
-                </a></li>
-            <li><a class="active"  href="All.html" >
-              <div>
-              مدیریت کاربران
-              <i class="material-icons">account_box</i>
-            </div>
-            </a></li>
-          </ul>
+                 
+             
+              </a></li>
+            </ul>
         </div>
       </div>
  
   <div class="content">
+    <div class="addressbar">
+  افزودن  <  کاربران < <i class="fa fa-home"></i> 
+    </div>
+    <br>
   <div class="form-box">
     <form id="addform" class="add-form">
         <div class="form-group">

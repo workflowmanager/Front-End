@@ -10,8 +10,8 @@
   href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
   integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
   crossorigin="anonymous">
-  <link rel="stylesheet" href="../common/menu.css" />
-    <link rel="stylesheet" href="../common/common.css" />
+  <link rel="stylesheet" href="../Common/menu.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
   <link rel="stylesheet" href="Users.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
@@ -26,17 +26,25 @@
         
         <div class="sidebar">
             <ul class="nav-menu">
-                <li><a href="../index.html">
+                <li><a  href="../index.html">
                   <div>
                    <span >صفحه اصلی</span>
-                      <i class="material-icons">home</i>
+                   <i class="fa fa-home"></i>
                   </div>
                   </a></li>
-              <li><a  href="All.html" >
-                <div >
-                مدیریت کاربران
-                <i class="material-icons">account_box</i>
+              <li><a href="All.html" >
+                <div>
+                کاربران
+                <i class="fa fa-users"></i>
               </div>
+              </a></li>
+              <li><a  href="../Workflows/All.html" >
+                <div>
+                    چرخه های کاری
+                    <i class="fa fa-retweet"></i>
+                </div>
+                 
+             
               </a></li>
             </ul>
           </div>
@@ -103,9 +111,12 @@
             </div>
           </div>
          
-         <a href="All.html" >انصراف</a>
-          <button type="submit" onclick="signin()" class="btn btn-primary">ویرایش</button>
-        </form>
+     <a href="All.html" class="refuse">انصراف</a>
+                <button type="submit" onclick="signin()" class="btn btn-primary">ویرایش</button>
+        
+        
+              </form>
+  
       </div>
 
 

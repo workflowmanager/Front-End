@@ -8,43 +8,59 @@
   <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
     integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="../common/menu.css" />
-    <link rel="stylesheet" href="../common/common.css" />
+    <link rel="stylesheet" href="../Common/menu.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
   <link rel="stylesheet" href="Users.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="topnav" id="myTopnav">
     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     <a href="#home" class="active">پنل ادمین</a> 
     <div class="sidebar">
-      <ul class="nav-menu">
-          <li><a  href="../index.html">
+        <ul class="nav-menu">
+            <li><a  href="../index.html">
+              <div>
+               <span >صفحه اصلی</span>
+               <i class="fa fa-home"></i>
+              </div>
+              </a></li>
+          <li><a class="active" href="All.html" >
             <div>
-             <span >صفحه اصلی</span>
-                <i class="material-icons">home</i>
+            کاربران
+            <i class="fa fa-users"></i>
+          </div>
+          </a></li>
+          <li><a  href="../Workflows/All.html" >
+            <div>
+                چرخه های کاری
+                <i class="fa fa-retweet"></i>
             </div>
-            </a></li>
-        <li><a class="active"  href="All.html" >
-          <div>
-          مدیریت کاربران
-          <i class="material-icons">account_box</i>
-        </div>
-        </a></li>
-      </ul>
+             
+         
+          </a></li>
+        </ul>
     </div>
   </div>
 
   <div class="content">
-
-    <a href="Create.html" class="float-add">
+   <div class="add-box">
+      <a href="Create.html" class="add-xl">
+          افزودن
+          <i class="fa fa-plus-square"></i>
+      </a>
+  
+      <a href="Create.html" class="add-sm">
+          <i class="fa fa-plus-square"></i>
+      </a>
+         
+   </div>
    
-        <i class="material-icons">add</i>
-    </a>
 
     <div class="table-responsive-sm" >
-      <table id="table" class="table user-list">
+      <table id="table" class="table user-list ">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -56,205 +72,193 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+            <tr onclick="getinfo()">
             <th scope="row">1</th>
             <td>شیما مینایی</td>
             <td>921041038</td>
             <td>92</td>
             <td>مهندسی کامپیوتر</td>
-            <td>
-                <a class="more-icon" href="Get.html">
-                    <i  class="material-icons">more</i>
-                  </a>
-              <a class="edit-icon" href="Update.html">
+             <td>
+                 
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
                 <i  class="material-icons">edit</i>
               </a>
-              <a class="delete-icon" onclick="delete_user()" href="#">
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
                 <i  class="material-icons">delete</i>
               </a>
            
             </td>
           </tr> 
-          <tr>
+          <tr onclick="getinfo()">
             <th scope="row">2</th>
             <td>سارا احمدی</td>
             <td>932015423</td>
             <td>93</td>
             <td>مهندسی برق</td>
             <td>
-              <a class="more-icon" href="Get.html">
-                <i  class="material-icons">more</i>
+               
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
               </a>
-          <a class="edit-icon" href="Update.html">
-            <i  class="material-icons">edit</i>
-          </a>
-          <a class="delete-icon" onclick="delete_user()" href="#">
-            <i  class="material-icons">delete</i>
-          </a>
-              </td>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr>
-          <tr>
+          <tr onclick="getinfo()">
             <th scope="row">3</th>
             <td>شیوا ساری</td>
             <td>945688742</td>
             <td>94</td>
             <td>مهندسی نفت</td>
-            <td>
-              <a class="more-icon" href="Get.html">
-                <i  class="material-icons">more</i>
+           <td>
+              
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
               </a>
-          <a class="edit-icon" href="Update.html">
-            <i  class="material-icons">edit</i>
-          </a>
-          <a class="delete-icon" onclick="delete_user()" href="#">
-            <i  class="material-icons">delete</i>
-          </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
             </td>
           </tr>
         
-          <tr>
+          <tr onclick="getinfo()">
                 <th scope="row">7</th>
                 <td>شیوا ساری</td>
                 <td>945688742</td>
                 <td>94</td>
                 <td>مهندسی عمران</td>
-                <td>
-                  <a class="more-icon" href="Get.html">
-                    <i  class="material-icons">more</i>
-                  </a>
-              <a class="edit-icon" href="Update.html">
+         <td>
+              
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
                 <i  class="material-icons">edit</i>
               </a>
-              <a class="delete-icon" onclick="delete_user()" href="#">
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
                 <i  class="material-icons">delete</i>
               </a>
-                </td>
+           
+            </td>
           </tr>
-          <tr>
+          <tr onclick="getinfo()">
                   <th scope="row">8</th>
                   <td>شیما مینایی</td>
                   <td>921041038</td>
                   <td>92</td>
                   <td>مهندسی کامپیوتر</td>
-                  <td>
-                    <a class="more-icon" href="Get.html">
-                      <i  class="material-icons">more</i>
-                    </a>
-                <a class="edit-icon" href="Update.html">
-                  <i  class="material-icons">edit</i>
-                </a>
-                <a class="delete-icon" onclick="delete_user()" href="#">
-                  <i  class="material-icons">delete</i>
-                </a>
-                    </td>
+             <td>
+              
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr> 
-          <tr>
+          <tr onclick="getinfo()">
                   <th scope="row">9</th>
                   <td>سارا احمدی</td>
                   <td>932015423</td>
                   <td>93</td>
                   <td>مهندسی برق</td>
-                  <td>
-                    <a class="more-icon" href="Get.html">
-                      <i  class="material-icons">more</i>
-                    </a>
-                <a class="edit-icon" href="Update.html">
-                  <i  class="material-icons">edit</i>
-                </a>
-                <a class="delete-icon" onclick="delete_user()" href="#">
-                  <i  class="material-icons">delete</i>
-                </a>
-                    </td>
+           <td>
+          
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr>
-          <tr>
+          <tr onclick="getinfo()">
                   <th scope="row">10</th>
                   <td>شیوا ساری</td>
                   <td>945688742</td>
                   <td>94</td>
                   <td>مهندسی نفت</td>
-                  <td>
-                    <a class="more-icon" href="Get.html">
-                      <i  class="material-icons">more</i>
-                    </a>
-                <a class="edit-icon" href="Update.html">
-                  <i  class="material-icons">edit</i>
-                </a>
-                <a class="delete-icon" onclick="delete_user()" href="#">
-                  <i  class="material-icons">delete</i>
-                </a>
-                    </td>
+           <td>
+            
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr>
-          <tr>
+          <tr onclick="getinfo()">
                     <th scope="row">11</th>
                     <td>شیما مینایی</td>
                     <td>921041038</td>
                     <td>92</td>
                     <td>فیزیک اتمی</td>
-                    <td >
-                      <a class="more-icon" href="Get.html">
-                        <i  class="material-icons">more</i>
-                      </a>
-                  <a class="edit-icon" href="Update.html">
-                    <i  class="material-icons">edit</i>
-                  </a>
-                  <a class="delete-icon" onclick="delete_user()" href="#">
-                    <i  class="material-icons">delete</i>
-                  </a>
-                      </td>
+               <td>
+               
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr> 
-          <tr>
+          <tr onclick="getinfo()">
                     <th scope="row">12</th>
                     <td>سارا احمدی</td>
                     <td>932015423</td>
                     <td>93</td>
                     <td>کشاورزی</td>
-                    <td >
-                      <a class="more-icon" href="Get.html">
-                        <i  class="material-icons">more</i>
-                      </a>
-                  <a class="edit-icon" href="Update.html">
-                    <i  class="material-icons">edit</i>
-                  </a>
-                  <a class="delete-icon" onclick="delete_user()" href="#">
-                    <i  class="material-icons">delete</i>
-                  </a>
-                      </td>
+              <td>
+              
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr>
-          <tr>
+          <tr onclick="getinfo()">
                     <th scope="row">13</th>
                     <td>شیوا ساری</td>
                     <td>945688742</td>
                     <td>94</td>
                     <td>مهندسی عمران</td>
-                    <td >
-                      <a class="more-icon" href="Get.html">
-                        <i  class="material-icons">more</i>
-                      </a>
-                  <a class="edit-icon" href="Update.html">
-                    <i  class="material-icons">edit</i>
-                  </a>
-                  <a class="delete-icon" onclick="delete_user()" href="#">
-                    <i  class="material-icons">delete</i>
-                  </a>
-                    </td>
+                  <td>
+               
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr>
-          <tr>
+          <tr onclick="getinfo()">
                       <th scope="row">14</th>
                       <td>شیوا ساری</td>
                       <td>945688742</td>
                       <td>94</td>
                       <td>مهندسی عمران</td>
-                      <td>   
-                        <a class="more-icon" href="Get.html">
-                          <i  class="material-icons">more</i>
-                        </a>
-                    <a class="edit-icon" href="Update.html">
-                      <i  class="material-icons">edit</i>
-                    </a>
-                    <a class="delete-icon" onclick="delete_user()" href="#">
-                      <i  class="material-icons">delete</i>
-                    </a>
-                      </td>
+                <td>
+               
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
           </tr>
         </tbody>
       </table>
@@ -262,6 +266,9 @@
   </div>
   
   <script>
+      function getinfo(){
+      location.replace("Get.html");
+    }
   function delete_user(){
     confirm("آیا از حذف کاربر اطمینان دارید؟");
   }

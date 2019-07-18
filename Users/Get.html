@@ -10,8 +10,8 @@
   href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
   integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
   crossorigin="anonymous">
-  <link rel="stylesheet" href="../common/menu.css" />
-  <link rel="stylesheet" href="../common/common.css" />
+  <link rel="stylesheet" href="../Common/menu.css" />
+  <link rel="stylesheet" href="../Common/common.css" />
   <link rel="stylesheet" href="Users.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
@@ -29,99 +29,69 @@
                 <li><a  href="../index.html">
                   <div>
                    <span >صفحه اصلی</span>
-                      <i class="material-icons">home</i>
+                   <i class="fa fa-home"></i>
                   </div>
                   </a></li>
-              <li><a  href="All.html" >
-                <div >
-                مدیریت کاربران
-                <i class="material-icons">account_box</i>
+              <li><a href="All.html" >
+                <div>
+                کاربران
+                <i class="fa fa-users"></i>
               </div>
+              </a></li>
+              <li><a  href="../Workflows/All.html" >
+                <div>
+                    چرخه های کاری
+                    <i class="fa fa-retweet"></i>
+                </div>
+                 
+             
               </a></li>
             </ul>
           </div>
       </div>
  
   <div class="content">
-        <div class="container">
-                <h3>اطلاعات کاربری </h3>
-                  <div class="row">
-                        <div class="col-50 box-of-data">
-                                <div class="col-50 title-of-data">
-                                        <label>نام :</label>
-                                    </div>
-                                    <div class="col-50">
-                                            <label>فاطمه </label>
-                                    </div>
-                            </div>
-                            <div class="col-50 box-of-data">
-                                <div class="col-50 title-of-data">
-                                        <label>نام خانوادگی : </label>
-                                    </div>
-                                <div class="col-50">
-                                        <label>رجائی</label>
-                                </div>
-                            </div>
-                  </div>
-                  <div class="row">
-                        <div class="col-50 box-of-data">
-                                <div class="col-50 title-of-data">
-                                        <label>شماره دانشجویی :</label>
-                                    </div>
-                                    <div class="col-50">
-                                            <label>931041015</label>
-                                    </div>
-                            </div>
-                            <div class="col-50 box-of-data">
-                                <div class="col-50 title-of-data">
-                                        <label>نام پدر :</label>
-                                    </div>
-                                <div class="col-50">
-                                        <label>سیدحسن</label>
-                                </div>
-                            </div>
-                  </div>
-                  <div class="row">
-                        <div class="col-50 box-of-data">
-                                <div class="col-50 title-of-data">
-                                        <label> محل سکونت :</label>
-                                    </div>
-                                    <div class="col-50">
-                                            <label>ارومیه </label>
-                                    </div>
-                            </div>
-                            <div class="col-50 box-of-data">
-                                <div class="col-50 title-of-data">
-                                        <label> جنسیت :</label>
-                                    </div>
-                                <div class="col-50">
-                                        <label>زن</label>
-                                </div>
-                            </div>
-                  </div>
-                  
-                  <div class="row">
-                        <div class="col-50 box-of-data">
-                            <div class="col-50 title-of-data">
-                                    <label>سال ورودی :</label>
-                                </div>
-                                <div class="col-50">
-                                    <label>1393</label>
-                                </div>
-                        </div>
-                        <div class="col-50 box-of-data">
-                            <div class="col-50 title-of-data">
-                                    <label>کد ملی  :</label>
-                                </div>
-                            <div class="col-50">
-                                    <label>14510915555</label>
-                            </div>
-                        </div>
-                  </div>
-                  <div class="row edit-button">
-                    <a  href="Update.html">ویرایش</a>
-                  </div>
-              </div>
+        <div class="form-box">
+    <form id="updateform" class="update-form">
+        <div class="form-group">
+            <label for="inputname">نام و نام خانوادگی</label>
+            <input type="text" class="form-control" id="inputname"  placeholder="شیما مینایی " disabled >
+          </div>
+          <div class="form-group">
+            <label for="inputsnumber">شماره دانشجویی</label>
+            <input type="text" class="form-control" id="inputsnumber" placeholder="921041038" disabled>
+          </div>
+          <div class="form-group">
+            <label for="inputfathername">نام پدر</label>
+            <input type="text" class="form-control" id="inputfathername" placeholder="سلیمان" disabled>
+          </div>
+          <div class="form-group">
+            <label for="inputcity">محل سکونت</label>
+            <input type="text" class="form-control" id="inputcity" placeholder="بوکان" disabled>
+          </div>
+          <div class="form-group">
+              <label for="">جنسیت : زن</label>
+       
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputncode">کد ملی</label>
+              <input type="text" class="form-control" id="inputncode" placeholder="2920327254" disabled>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputyear">سال ورودی</label>
+           <input type="text" class="form-control" id="inputyear" placeholder="92" disabled>
+            </div>
+        
+          </div>
+      
+         
+        
+          
+        </form>
+         <a href="All.html" class="refuse">بازگشت</a>
+      </div>
+
   </div>
 
 
