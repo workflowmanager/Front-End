@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>لیست چرخه های کاری</title>
+  <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+    integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../Common/menu.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
+  <link rel="stylesheet" href="Workflows.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="active">پنل ادمین</a> 
+    <div class="sidebar">
+      <ul class="nav-menu">
+          <li><a  href="../index.html">
+            <div>
+             <span >صفحه اصلی</span>
+             <i class="fa fa-home"></i>
+            </div>
+            </a></li>
+        <li><a href="../Users/All.html" >
+          <div>
+          کاربران
+          <i class="fa fa-users"></i>
+        </div>
+        </a></li>
+        <li><a class="active" href="All.html" >
+          <div>
+              چرخه های کاری
+              <i class="fa fa-retweet"></i>
+          </div>
+           
+       
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+
+      <div class="add-box">
+          <a href="Create.html" class="add-xl">
+             افزودن
+              <i class="fa fa-plus-square"></i>
+          </a>
+      
+          <a href="Create.html" class="add-sm">
+              <i class="fa fa-plus-square"></i>
+          </a>
+             
+       </div>
+
+    <div class="table-responsive-sm" >
+      <table id="table" class="table user-list">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">عنوان</th>
+            <th scope="col">توضیحات</th>
+            <th scope="col">تاریخ ثبت</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="getinfo()">
+           
+            <th scope="row">1</th>
+            <td>   
+              امور دانشجویی
+            </td>
+            <td>امور دانشجویی</td>
+            <td>2019.2.2</td>
+          <td>
+               
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
+      
+          </tr> 
+          <tr onclick="getinfo()">
+            <th scope="row">2</th>
+            <td>ستاد ایثارگران</td>
+            <td>ستاد ایثارگران</td>
+            <td>2019.2.2</td>
+       <td>
+              
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
+          </tr>
+          <tr onclick="getinfo()">
+            <th scope="row">3</th>
+            <td>امور دانشجویی</td>
+            <td>امور دانشجویی</td>
+            <td>2019.2.2</td>
+         <td>
+               
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
+          </tr>
+        
+          <tr onclick="getinfo()">
+                <th scope="row">4</th>
+                <td>ستاد ایثارگران</td>
+                <td>ستاد ایثارگران</td>
+                <td>2019.2.2</td>
+              <td>
+               
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
+          </tr>
+     
+          <tr onclick="getinfo()">
+                    <th scope="row">5</th>
+                    <td>امور دانشجویی</td>
+                    <td>امور دانشجویی</td>
+                    <td>2019.2.2</td>
+             <td>
+              
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
+          </tr> 
+      
+          <tr onclick="getinfo()">
+                      <th scope="row">6</th>
+                      <td>ستاد ایثارگران</td>
+                      <td>ستاد ایثارگران</td>
+                      <td>2019.2.2</td>
+             <td>
+              
+              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
+                <i  class="material-icons">edit</i>
+              </a>
+              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
+                <i  class="material-icons">delete</i>
+              </a>
+           
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script>
+    function getinfo(){
+      location.replace("Get.html");
+    }
+  function delete_user(){
+    confirm("آیا از حذف کاربر اطمینان دارید؟");
+  }
+  </script>
+  <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script> 
+  <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+    integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>ویرایش چرخه ی کاری</title>
+    <link 
+  rel="stylesheet"
+  href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+  integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="../Common/menu.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
+  <link rel="stylesheet" href="Workflows.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+</head>
+<body>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="active">پنل مدیریت</a>
+        
+        <div class="sidebar">
+            <ul class="nav-menu">
+                <li><a  href="../index.html">
+                  <div>
+                   <span >صفحه اصلی</span>
+                   <i class="fa fa-home"></i>
+                  </div>
+                  </a></li>
+              <li><a href="../Users/All.html" >
+                <div>
+                کاربران
+                <i class="fa fa-users"></i>
+              </div>
+              </a></li>
+              <li><a  href="All.html" >
+                <div>
+                    چرخه های کاری
+                    <i class="fa fa-retweet"></i>
+                </div>
+                 
+             
+              </a></li>
+            </ul>
+          </div>
+      </div>
+ 
+  <div class="content">  
+   <div class="form-box">
+        <form id="addform" class="add-form">
+                <div class="form-group">
+                  <label for="inputname">عنوان</label>
+                  <input type="text" class="form-control" id="inputname" placeholder="تسویه حساب">
+                </div>
+                <div class="form-group">
+                  <label for="inputdes">توضیحات</label>
+                  <input type="text" class="form-control" id="inputdes" placeholder="تسویه حساب دانشجویی">
+                </div>
+        
+                <form action="">
+                  <div class="levels">
+                    <div class="hiddenlevel">
+                      <div id="main">
+                        <form action="">
+                          <div class="form-group">
+        
+                            <input type="text" class="form-control form-control-sm form-control-level" id="inputname" placeholder="نام مرحله">
+                          </div>
+                          <div class="form-group">
+        
+                            <input type="text" class="form-control form-control-sm form-control-level" id="inputdes" placeholder="توضیحات">
+                          </div>
+                          <button type="button" class="btn btn-sm btn-delete-level">x
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <label for="inputlevels" class="levels-label">مرحله ها</label>
+                    <div id="fogrd" class="levels-items-default">
+                            <form action="">
+                              <div class="form-group">
+              
+                                <input type="text" class="form-control form-control-sm form-control-level" id="inputname" placeholder="ستاد مرکزی">
+                              </div>
+                              <div class="form-group">
+              
+                                <input type="text" class="form-control form-control-sm form-control-level" id="inputdes" placeholder="ستاد مرکزی">
+                              </div>
+                              <button type="button" class="btn btn-sm btn-delete-default-level">x
+                              </button>
+                            </form>
+                     </div>
+                     <div id="fogrd" class="levels-items-default">
+                            <form action="">
+                              <div class="form-group">
+              
+                                <input type="text" class="form-control form-control-sm form-control-level" id="inputname" placeholder="امور ایثارگران">
+                              </div>
+                              <div class="form-group">
+              
+                                <input type="text" class="form-control form-control-sm form-control-level" id="inputdes" placeholder="امور ایثارگران">
+                              </div>
+                              <button type="button" class="btn btn-sm btn-delete-default-level">x
+                              </button>
+                            </form>
+                     </div>
+                     <div id="fogrd" class="levels-items-default">
+                            <form action="">
+                              <div class="form-group">
+              
+                                <input type="text" class="form-control form-control-sm form-control-level" id="inputname" placeholder="کتابخانه مرکزی">
+                              </div>
+                              <div class="form-group">
+              
+                                <input type="text" class="form-control form-control-sm form-control-level" id="inputdes" placeholder="کتابخانه مرکزی">
+                              </div>
+                              <button type="button" class="btn btn-sm btn-delete-default-level">x
+                              </button>
+                            </form>
+                     </div>
+                    <div id="fogr" class="levels-items">
+                      <form action="">
+                        <div class="form-group">
+        
+                          <input type="text" class="form-control form-control-sm form-control-level" id="inputname" placeholder="نام مرحله">
+                        </div>
+                        <div class="form-group">
+        
+                          <input type="text" class="form-control form-control-sm form-control-level" id="inputdes" placeholder="توضیحات">
+                        </div>
+                      </form>
+        
+        
+                    </div>
+             
+                  </div>
+                </form>
+                <button type="button" id="copy_level" class="btn btn-sm btn-success btn-copy-level">+
+                </button>
+             
+             <a href="All.html" class="refuse">انصراف</a>
+                <button type="submit" onclick="signin()" class="btn btn-primary">ویرایش</button>
+        
+        
+              </form>
+     
+                 
+      </div>
+  </div>
+  <script>
+        $(document).ready(function () {
+          $("#copy_level ").click(function (e) {
+            var avails = $(".levels-items");
+            var cnt = avails.length + 1;
+            var div = $("#main");
+    
+            div.clone(true).appendTo(avails.parent()).attr("id", "fogr" + cnt).addClass("levels-items");
+            e.preventDefault();
+          });
+    
+          $(".btn-delete-level").click(function (e) {
+            $(this).parent().remove();
+          });
+          $(".btn-delete-default-level").click(function (e) {
+            var r = confirm("از حذف این مرحله اطمینان دارید؟");
+             if (r == true) {
+              $(this).parent().remove();
+           } 
+            
+          });
+        });
+  
+      </script>
+  <script>
+  function signin(){
+  alert("I am an alert box!");
+  }
+  function url_redirect(url){
+    var X = setTimeout(function(){
+        window.location.replace(url);
+        return true;
+    },300);
+
+    if( window.location = url ){
+        clearTimeout(X);
+        return true;
+    } else {
+        if( window.location.href = url ){
+            clearTimeout(X);
+            return true;
+        }else{
+            clearTimeout(X);
+            window.location.replace(url);
+            return true;
+        }
+    }
+    return false;
+}
+  </script>
+  <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+      }
+      </script>
+      
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script> 
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+  integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+  crossorigin="anonymous"></script>
+</body>
+</html>

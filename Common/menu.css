@@ -1,6 +1,6 @@
 .topnav {
     overflow: hidden;
-    background-color: #283593;
+    background-color: #3c8dbc;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,7 +17,7 @@
   }
 
   .topnav a.active {
-    background-color: #283593;
+   
     color: white;
   }
   
@@ -28,7 +28,7 @@
     margin: 0;
     padding: 0;
     width: 11.11em;
-    background-color: #283593;
+    background-color: #333;
     position: fixed;
     height: 100%;
     overflow: hidden;
@@ -52,17 +52,21 @@
    width: 100%;
    
   }
+  .nav-menu i{
+    margin-left: 0.7em;
+  }
   .nav-menu > li > a:hover {
-   background-color:#5f6cd3;
+   border-right: 0.5em solid #808080;
   }
   .nav-menu a.active {
-    background-color:#5f6cd3;
+    border-right: 0.5em solid #808080;
    }
    
 .sidebar .nav-menu div{
     display: flex;
     float: right !important;
   }
+
   @media screen and (max-width: 50em) {
     
     .topnav a.icon {
