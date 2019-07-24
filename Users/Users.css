@@ -17,6 +17,9 @@
 .btn{
 margin-top: 0em;
 }
+.nav-tabs{
+  direction: rtl !important;
+}
 @media screen and (max-width: 50em) {
   .box-of-data{
     width: 100%;

@@ -64,10 +64,10 @@
    
    <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" href="All.html">دانشجویان</a>
+      <a class="nav-link" href="All.html">دانشجویان</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="All-in.html">کارمندان</a>
+      <a class="nav-link active" href="All-in.html">کارمندان</a>
     </li>
   
   </ul>
@@ -77,9 +77,8 @@
           <tr>
             <th scope="col">ردیف</th>
             <th scope="col">نام و نام خانوادگی</th>
-            <th scope="col">شماره دانشجویی</th>
-            <th scope="col">ورودی</th>
-            <th scope="col">رشته</th>
+            <th scope="col">بخش</th>
+            <th scope="col">تحصیلات</th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -87,9 +86,8 @@
             <tr onclick="getinfo()">
             <th scope="row">1</th>
             <td>شیما مینایی</td>
-            <td>921041038</td>
-            <td>92</td>
-            <td>مهندسی کامپیوتر</td>
+            <td>امور مالی</td>
+            <td>کارشناسی</td>
              <td>
                  
               <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
@@ -104,9 +102,8 @@
           <tr onclick="getinfo()">
             <th scope="row">2</th>
             <td>سارا احمدی</td>
-            <td>932015423</td>
-            <td>93</td>
-            <td>مهندسی برق</td>
+            <td>آموزش</td>
+            <td>کارشناسی ارشد</td>
             <td>
                
               <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
@@ -120,10 +117,9 @@
           </tr>
           <tr onclick="getinfo()">
             <th scope="row">3</th>
-            <td>شیوا ساری</td>
-            <td>945688742</td>
-            <td>94</td>
-            <td>مهندسی نفت</td>
+            <td>شیما مینایی</td>
+            <td>امور مالی</td>
+            <td>کارشناسی</td>
            <td>
               
               <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
@@ -137,11 +133,10 @@
           </tr>
         
           <tr onclick="getinfo()">
-                <th scope="row">7</th>
-                <td>شیوا ساری</td>
-                <td>945688742</td>
-                <td>94</td>
-                <td>مهندسی عمران</td>
+                <th scope="row">4</th>
+                <td>سارا احمدی</td>
+                <td>آموزش</td>
+                <td>کارشناسی ارشد</td>
          <td>
               
               <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
@@ -153,125 +148,7 @@
            
             </td>
           </tr>
-          <tr onclick="getinfo()">
-                  <th scope="row">8</th>
-                  <td>شیما مینایی</td>
-                  <td>921041038</td>
-                  <td>92</td>
-                  <td>مهندسی کامپیوتر</td>
-             <td>
-              
-              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
-                <i  class="material-icons">edit</i>
-              </a>
-              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
-                <i  class="material-icons">delete</i>
-              </a>
-           
-            </td>
-          </tr> 
-          <tr onclick="getinfo()">
-                  <th scope="row">9</th>
-                  <td>سارا احمدی</td>
-                  <td>932015423</td>
-                  <td>93</td>
-                  <td>مهندسی برق</td>
-           <td>
-          
-              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
-                <i  class="material-icons">edit</i>
-              </a>
-              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
-                <i  class="material-icons">delete</i>
-              </a>
-           
-            </td>
-          </tr>
-          <tr onclick="getinfo()">
-                  <th scope="row">10</th>
-                  <td>شیوا ساری</td>
-                  <td>945688742</td>
-                  <td>94</td>
-                  <td>مهندسی نفت</td>
-           <td>
-            
-              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
-                <i  class="material-icons">edit</i>
-              </a>
-              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
-                <i  class="material-icons">delete</i>
-              </a>
-           
-            </td>
-          </tr>
-          <tr onclick="getinfo()">
-                    <th scope="row">11</th>
-                    <td>شیما مینایی</td>
-                    <td>921041038</td>
-                    <td>92</td>
-                    <td>فیزیک اتمی</td>
-               <td>
-               
-              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
-                <i  class="material-icons">edit</i>
-              </a>
-              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
-                <i  class="material-icons">delete</i>
-              </a>
-           
-            </td>
-          </tr> 
-          <tr onclick="getinfo()">
-                    <th scope="row">12</th>
-                    <td>سارا احمدی</td>
-                    <td>932015423</td>
-                    <td>93</td>
-                    <td>کشاورزی</td>
-              <td>
-              
-              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
-                <i  class="material-icons">edit</i>
-              </a>
-              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
-                <i  class="material-icons">delete</i>
-              </a>
-           
-            </td>
-          </tr>
-          <tr onclick="getinfo()">
-                    <th scope="row">13</th>
-                    <td>شیوا ساری</td>
-                    <td>945688742</td>
-                    <td>94</td>
-                    <td>مهندسی عمران</td>
-                  <td>
-               
-              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
-                <i  class="material-icons">edit</i>
-              </a>
-              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
-                <i  class="material-icons">delete</i>
-              </a>
-           
-            </td>
-          </tr>
-          <tr onclick="getinfo()">
-                      <th scope="row">14</th>
-                      <td>شیوا ساری</td>
-                      <td>945688742</td>
-                      <td>94</td>
-                      <td>مهندسی عمران</td>
-                <td>
-               
-              <a class="edit-icon" href="Update.html" data-toggle="tooltip" title="ویرایش">
-                <i  class="material-icons">edit</i>
-              </a>
-              <a class="delete-icon" onclick="delete_user()" href="#"  data-toggle="tooltip" title="حذف">
-                <i  class="material-icons">delete</i>
-              </a>
-           
-            </td>
-          </tr>
+     
         </tbody>
       </table>
     </div>
