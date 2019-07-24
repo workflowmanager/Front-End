@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>درخواست ها</title>
+  <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+    integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../Common/menu.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
+<link rel="stylesheet" href="requests.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="active">پنل کاربر</a> 
+    <div class="sidebar">
+        <ul class="nav-menu">
+            <li><a  href="index.html">
+              <div>
+               <span >صفحه اصلی</span>
+               <i class="fa fa-home"></i>
+              </div>
+              </a></li>
+              <li><a class="active" data-toggle="collapse" data-target="#submenu" href="Requests.html" >
+                <div>
+                    <i class="fa fa-sort-down"></i>
+                    &nbsp;
+                درخواست ها
+                <i class="fa fa-align-justify"></i>
+              </div>
+              </a></li>
+      
+            <li id="submenu" class="collapse" ><a  href="Get.html" >
+              <div>
+              درخواست های من
+            </div>
+          </a>
+          </li>
+        
+        </ul>
+    </div>
+  </div>
+
+  <div class="content">
+      
+      <div class="card reqs">
+          <div class="card-header">
+            درخواست فارغ التحصیلی
+          </div>
+          <div class="card-body">
+            <p>تاریخ ثبت : 98.02.02</p>
+            <p class="card-text">این یک متن تست میباشد</p>
+            <button type="button" class="btn btn-success btn-sm">ثبت</button>
+          </div>
+        </div>
+        <div class="card reqs">
+            <div class="card-header">
+            
+              درخواست فارغ التحصیلی
+            </div>
+            <div class="card-body">
+              <p>تاریخ ثبت : 98.02.02</p>
+              <p class="card-text">این یک متن تست میباشد</p>
+              <button type="button" class="btn btn-success btn-sm">ثبت</button>
+            </div>
+          </div>
+          <div class="card reqs">
+              <div class="card-header">
+                درخواست فارغ التحصیلی
+              </div>
+              <div class="card-body">
+                <p>تاریخ ثبت : 98.02.02</p>
+                <p class="card-text">این یک متن تست میباشد</p>
+                <button type="button" class="btn btn-success btn-sm">ثبت</button>
+              </div>
+            </div>
+          
+  
+  </div>
+  
+  <script>
+      function getinfo(){
+      location.replace("Get.html");
+    }
+  function delete_user(){
+    confirm("آیا از حذف کاربر اطمینان دارید؟");
+  }
+  </script>
+  <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+    integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>
