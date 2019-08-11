@@ -21,9 +21,9 @@
   border-radius: 0em 0em 0.5em 0.5em;
 }
 .form-control-level{
-  width: 44.5% !important;
+  width: 45% !important;
   float: right;
-  margin-right: 0.1em;
+  margin-right: 0.2em;
   margin-bottom: 1em;
 }
 
@@ -51,7 +51,7 @@
 
 .btn-delete-level{
   float: right !important;
-  margin-right: 0.2em;
+  margin-right: 0.5em;
   background-color: #ff9999 !important;
   color:white;
 }
@@ -67,15 +67,47 @@
 .hiddenlevel{
   display: none;
 }
+.hiddenbox{
+  border: 0.05em solid #d9d9d9; 
+  border-radius: 0.2em; 
+  margin: 1em 0.1em 0.5em 0.5em; 
+  padding: 1em;
+}
+.clone-hidden-rules-box{
+  border: 0.05em solid #d9d9d9; 
+  border-radius: 0.2em; 
+  padding: 0.5em; 
+  margin-top:0.5em;
+}
+.form-row{
+  direction: rtl !important;
+}
+.btn-add-rules{
+  color: black !important;
+}
+.rules-box{
+  border: 0.05em solid #d9d9d9;
+   border-radius: 0.2em; 
+   padding: 0.5em; 
+   margin-top:0.5em;
+}
+.clonehirules{
+  display: none;
+}
+.rules-label{
+  margin-bottom: 1em;
+}
 
 @media screen and (max-width: 50em) {
-
+  .form-control-level{
+    width: 42% !important;
+  }
 .btn-delete-default-level{
   margin-right: 0.02em;
 }
   .btn-delete-level{
    
-    margin-right: 0.02em;
+    margin-right: 0em;
   }
   .btn-copy-level{
     margin-bottom: 0.2em;
@@ -86,14 +118,16 @@
 }
 @media screen and (max-width: 35em) {
 
-
+  .form-control-level{
+    width: 42% !important;
+  }
 
 .btn-delete-default-level{
   margin-right: 0.02em;
 }
   .btn-delete-level{
    
-    margin-right: 0.02em;
+    margin-right: 0em;
   }
   .btn-copy-level{
     margin-bottom: 0.2em;
